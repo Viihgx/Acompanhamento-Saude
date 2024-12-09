@@ -95,6 +95,8 @@
   justify-content: center;
   font-size: 12px;
   font-weight: bold;
+  margin-bottom: 20px;
+  padding-top: 0.8rem;
 }
 
 .logout-botao:hover {
