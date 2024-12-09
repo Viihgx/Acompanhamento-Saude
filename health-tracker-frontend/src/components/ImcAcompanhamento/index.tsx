@@ -341,7 +341,7 @@ export default function ImcAcompanhamento() {
               />
             </div>
 
-            <button type="submit">Enviar</button>
+            <button className="button-submit-form" type="submit">Enviar</button>
           </form>
         </div>
       ) : (
