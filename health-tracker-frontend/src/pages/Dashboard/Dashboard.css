@@ -1,0 +1,43 @@
+/* Contêiner principal do dashboard */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Título principal */
+  .dashboard-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid responsivo */
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Cada item do dashboard */
+  .dashboard-item {
+    /* background: #ffffff; */
+    border: 1px solid #ddd;
+    /* border-radius: 8px; */
+    /* padding: 20px; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Título de cada item */
+  .dashboard-item-title {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
+  /* Texto de comparação */
+  .comparison-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+  }
+  

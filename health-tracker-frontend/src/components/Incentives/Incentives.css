@@ -1,0 +1,100 @@
+.incentives-container {
+    border-radius: 50px;
+    padding: 2rem; /* Aumenta o espaçamento interno */
+    text-align: center;
+    background: #e6e6e657; /* Gradiente suave */
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative; /* Necessário para as bolhas */
+    overflow: hidden; /* Esconde as bolhas fora do container */
+    width: 100%;
+    height: 200px; /* Define uma altura maior */
+    display: flex; /* Alinha o conteúdo centralmente */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.incentives-container p {
+    font-size: 1.1rem; /* Ajusta o tamanho da fonte */
+    line-height: 1.8;
+    font-weight: 500;
+    z-index: 1; /* Garante que o texto fique acima das bolhas */
+}
+
+/* Bolhas decorativas */
+.incentives-container::before,
+.incentives-container::after,
+.incentives-container .bubble1,
+.incentives-container .bubble2,
+.incentives-container .bubble3 {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.4;
+    animation: float 6s infinite ease-in-out;
+    z-index: 0;
+}
+
+/* Primeira bolha */
+.incentives-container::before {
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.2);
+    top: -50px;
+    left: -30px;
+    animation-delay: 0s;
+}
+
+/* Segunda bolha */
+.incentives-container::after {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.15);
+    bottom: -40px;
+    right: -20px;
+    animation-delay: 2s;
+}
+
+/* Terceira bolha */
+.incentives-container .bubble1 {
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.1);
+    top: 30%;
+    left: 10%;
+    animation-delay: 1s;
+}
+
+/* Quarta bolha */
+.incentives-container .bubble2 {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    bottom: 10%;
+    left: 50%;
+    animation-delay: 3s;
+}
+
+/* Quinta bolha */
+.incentives-container .bubble3 {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.15);
+    top: 15%;
+    right: 20%;
+    animation-delay: 4s;
+}
+
+/* Animação das bolhas */
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.2);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}

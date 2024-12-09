@@ -1,0 +1,155 @@
+.dashboard-layout {
+    display: grid;
+    grid-template-areas:
+      "calculator calculator calculator sidebar"
+      "charts charts charts sidebar"
+      "progress progress progress sidebar";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    gap: 2rem;
+    height: 100vh;
+    padding-left: 3rem;
+    box-sizing: border-box;
+  }
+
+/* Calculadora */
+.calculator-container {
+  grid-area: calculator;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: space-between; /* Distribui os itens */
+  background: linear-gradient(0deg, rgba(47,146,207,1) 0%, rgba(128,156,245,1) 100%);
+  border-radius: 15px; /* Bordas arredondadas */
+  padding: 1rem 2rem; /* Espaçamento interno */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  height: 5rem;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.calculator-container h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Botão de Check-in */
+.btn-checkin {
+  background-color: #ff8c00;
+  color: #ffffff; /* Texto laranja */
+  padding: 8px 16px; /* Espaçamento interno */  
+  border-radius: 15px; /* Bordas arredondadas */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+.btn-checkin:hover {
+  background-color: #c06b02; /* Fundo laranja no hover */
+  color: white; /* Texto branco no hover */
+}
+
+  
+  /* Gráficos Superiores */
+  .charts-row {
+    grid-area: charts;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    height: 33vh; /* Ocupa 1/3 da altura total */
+  }
+  
+  .chart-card {
+    background: white;
+    border-radius: 30px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Preenche totalmente o espaço */
+    overflow: hidden;
+  }
+
+  /* Linha de gráficos inferiores */
+.full-width-row {
+    grid-area: progress;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr; /* Duas colunas para dividir o espaço */
+    /* gap: 1rem; */
+    width: 100%; /* Ocupa todo o espaço horizontal */
+    height: 30vh;
+  }
+  
+  /* Card do Progresso do IMC */
+  .chart-card-progress{
+    background: white;
+    border-radius: 30px 0 0 30px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Preenche totalmente o espaço */
+    overflow: hidden;
+    /* height: 100%; */
+  }
+  
+  /* Card da Proporção de Categorias do IMC */
+  .chart-card-categories {
+    background: #e9e9e9;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0 30px 30px 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Preenche totalmente o espaço */
+    overflow: hidden;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-left: 3rem;
+    height: 100%; 
+    width: 100%;
+    max-width: 350px;
+    overflow-x: hidden;
+    border-radius: 50px;
+    background:  linear-gradient(0deg, rgba(47,146,207,1) 0%, rgba(128,156,245,1) 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 0.2rem;
+  }
+  
+  .sidebar-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .sidebar-section-incentives {
+    display: flex;
+    overflow: hidden;
+    border-radius: 50px; /* Aplica arredondamento apenas na parte superior */
+    margin-top: 1rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px; /* Aumenta a altura mínima do container */
+    margin-top: 1rem; /* Adiciona espaçamento superior */
+  }
+  
+  

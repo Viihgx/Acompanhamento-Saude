@@ -1,0 +1,108 @@
+/* Container da Sidebar */
+.sidebar-container {
+  width: 13%;
+  height: 100vh;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Mantém os itens no topo e o botão de logout embaixo */
+  padding: 0;
+  overflow-y: auto;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  z-index: 10;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Container superior (título e itens de navegação) */
+.top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+}
+
+.top-container .title-sidebar {
+  margin-top: 2.5rem;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Separador */
+.sidebar-container hr {
+  border: none;
+  height: 2px;
+  background-color: #E0E0E0;
+  width: 100%;
+  /* margin: 1rem 0; */
+}
+
+/* Itens de navegação */
+.nav-item {
+  color: #989E9A;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  height: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: #ececec;
+}
+
+.nav-item.active {
+  color: #000000;
+  background-color: #eeedeb;
+  height: 25px;
+}
+
+/* Ícones ao lado dos textos */
+.icon {
+  margin-right: 8px; /* Espaço entre o ícone e o texto */
+  font-size: 1.2rem; /* Ajuste do tamanho do ícone */
+  vertical-align: middle; /* Centraliza o ícone verticalmente */
+  color: #989E9A;
+}
+
+/* Estilo para links ativos */
+.nav-item.active .icon {
+  color: rgb(47,146,207); /* Cor do ícone quando o link está ativo */
+}
+
+/* Estilo para links ativos */
+.nav-item.active {
+  color: rgb(47,146,207); /* Cor do ícone quando o link está ativo */
+}
+
+/* Botão de Logout com ícone */
+.logout-botao {
+  background-color: transparent;
+  color: #989E9A;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.logout-botao:hover {
+  color: rgb(47,146,207);
+  background-color: transparent;
+  box-shadow: none;
+} 
+
+.logout-botao:hover .icon {
+  color: rgb(47,146,207);
+}

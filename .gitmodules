@@ -1,0 +1,3 @@
+[submodule "health-tracker-backend"]
+	path = health-tracker-backend
+	url = https://github.com/Viihgx/Acompanhamento-Saude

@@ -1,0 +1,39 @@
+.quick-history-widget {
+    /* background: linear-gradient(135deg, #ffffff, #f7f7f7); */
+    /* border-radius: 10px; */
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    /* padding: 20px; */
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .quick-history-widget h4 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .quick-history-widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .quick-history-widget li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+  }
+  
+  .quick-history-widget .label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .quick-history-widget .value {
+    font-weight: bold;
+    color: #f5b91e; /* Cor principal para valores */
+  }
+  

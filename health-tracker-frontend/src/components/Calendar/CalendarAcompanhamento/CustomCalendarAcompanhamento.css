@@ -1,0 +1,158 @@
+.container-container {
+  max-width: 800px;
+}
+
+/* texto do mes */
+.react-calendar__navigation__label{ 
+  color: #515151;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* cor da seta */
+.react-calendar__navigation button {
+    color: #515151;
+}
+
+/* hover do "cabeçalho" mes, setas */
+.react-calendar__navigation button:enabled:hover, .react-calendar__navigation button:enabled:focus {
+    background-color: #b8b8b847;
+}
+
+.react-calendar {
+  border: none;
+  background: #ffffff;
+  color: #c1c1c1;
+  border-radius: 10px;
+  border: 1px solid #EFEFEE;
+  padding: 10px;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.react-calendar__tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.week-checkin {
+    background: linear-gradient(0deg, rgba(47,146,207,1) 0%, rgba(128,156,245,1) 100%); /* Verde para semanas com check-in */
+    border-radius: 0; /* Nenhuma borda arredondada no meio */
+    color: white;
+  }
+  
+  .week-checkin-start {
+    background: linear-gradient(0deg, rgba(47,146,207,1) 0%, rgba(128,156,245,1) 100%);
+    border-radius: 15px 0 0 15px; /* Bordas arredondadas na segunda-feira */
+    color: white;
+  }
+  
+  .week-checkin-end {
+    background: linear-gradient(0deg, rgba(47,146,207,1) 0%, rgba(128,156,245,1) 100%);
+    border-radius: 0 15px 15px 0; /* Bordas arredondadas no domingo */
+    color: white;
+  }
+  
+  .week-missing {
+    background-color: #e74c3c; /* Vermelho para semanas sem check-in */
+    border-radius: 0; /* Nenhuma borda arredondada no meio */
+    color: white;
+  }
+  
+  .week-missing-start {
+    background-color: #e74c3c;
+    border-radius: 15px 0 0 15px; /* Bordas arredondadas na segunda-feira */
+    color: white;
+  }
+  
+  .week-missing-end {
+    background-color: #e74c3c;
+    border-radius: 0 15px 15px 0; /* Bordas arredondadas no domingo */
+    color: white;
+  }
+  
+  .react-calendar__month-view__days{
+    row-gap: 6px; /* Adiciona espaço entre os nomes dos dias e os números */
+  }
+
+.react-calendar__tile:hover {
+  background: #555555;
+  color: white;
+}
+
+.react-calendar__navigation button:hover  {
+    background-color: #555555;
+}
+
+.calendar-checkin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+}
+
+.calendar-with-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.calendar-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.info-card {
+  max-width: 400px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+.info-card h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #555;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.circle.blue {
+  background: linear-gradient(0deg, rgba(47,146,207,1) 0%, rgba(128,156,245,1) 100%);
+}
+
+.circle.red {
+  background-color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .calendar-checkin-container {
+    gap: 15px; /* Reduz o espaçamento no mobile */
+  }
+
+  .info-card {
+    max-width: 100%;
+  }
+}

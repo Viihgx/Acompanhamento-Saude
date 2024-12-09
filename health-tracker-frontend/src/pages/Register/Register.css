@@ -1,0 +1,152 @@
+/* Register Container */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(47,146,207,1) 0%, rgba(128,156,245,1) 100%);
+  font-family: Arial, sans-serif;
+}
+
+/* Card */
+.register-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 700px; /* Ajuste para aumentar a largura do card */
+  box-sizing: border-box;
+}
+
+/* Title */
+.register-title {
+  font-size: 1.8rem;
+  color: rgb(47, 146, 207);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.register-title span {
+  font-weight: bold;
+  color: #ff8c00;
+}
+
+/* Form */
+.register-form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.form-group-register {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 250px;
+  margin-right: 50px;
+}
+
+.form-group-register-fullwidth {
+  width: 93%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group-register-fullwidth label {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  padding-left: 9px;
+}
+
+.form-group-register label {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+.form-group-register input {
+  border-radius: 50px;
+}
+
+.input-form-register {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-form-register:focus {
+  border-color: rgb(47, 146, 207);
+  outline: none;
+}
+
+
+.form-group-register-checkbox {
+  padding-bottom: 20px;
+  padding-left: 15px;
+  width: 100%; /* Garante que o checkbox ocupe uma linha inteira */
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinha o grupo à esquerda */
+  gap: 10px; /* Adiciona espaçamento entre o checkbox e o texto */
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+  padding-left: 0; /* Remove qualquer indentação extra */
+}
+
+.input-checkbox {
+  margin: 0; /* Remove margens desnecessárias */
+  transform: scale(1.2); /* Tamanho ligeiramente maior */
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  cursor: pointer;
+}
+
+/* Button */
+.register-button {
+  width: 100%;
+  padding: 12px;
+  background: rgb(47, 146, 207);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-sizing: border-box;
+}
+
+.register-button:hover {
+  background: rgba(47, 146, 207, 0.9);
+}
+
+/* Login Link */
+.login-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+.login-link span {
+  color: #ff8c00;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-link span:hover {
+  text-decoration: underline;
+}
