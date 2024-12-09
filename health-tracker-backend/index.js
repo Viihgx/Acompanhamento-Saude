@@ -3,7 +3,23 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
-app.use(cors());
+
+// Domínios permitidos
+const allowedOrigins = [
+  "https://acompanhamento-saude.vercel.app", // Front-end no Vercel
+];
+
+// Configuração do middleware CORS
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+}));
+
 app.use(express.json());
 
 const userRoutes = require("./routes/userRoutes");
