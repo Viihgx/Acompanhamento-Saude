@@ -79,6 +79,7 @@
   .button-submit-form {
     grid-column: 1 / -1; /* Botão ocupa a linha completa */
     font-size: 1.1rem;
+    padding: 12px 30px;
     background-color: #FF8C00;
     color: white;
     border: none;
